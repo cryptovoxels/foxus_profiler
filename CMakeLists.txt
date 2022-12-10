@@ -26,6 +26,7 @@ set_target_properties(foxus_profiler PROPERTIES PUBLIC_HEADER
   "include/cprofiler.h;include/perfetto.h;include/profiler.h")
 
 set_property(TARGET foxus_profiler PROPERTY POSITION_INDEPENDENT_CODE ON)
+set_property(TARGET foxus_profiler PROPERTY CXX_STANDARD 14)
 
 target_include_directories(foxus_profiler
   PUBLIC include
